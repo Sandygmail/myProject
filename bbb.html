@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3cEf5zq+ndoq7zN7kYDLzGTmxu2Ra8G7VG/kQPXs5xd6glQkG0F/2hRK116IQv2S6sb" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C89scichPD0TNL3GYe70qVM2DjhG5KLCk/2cPn2iUqm+rBQMhflW8Q2rFSaKTpW6wRDJM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        /* Text Content */
+        .content {
+            max-width: 400px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+
+        .content p {
+            margin-left: 100px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+
+        /* Mock Browser Window */
+        .mock-browser {
+            width: 680px;
+            height: 450px;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Image Placeholder */
+        .image-placeholder {
+            height: 450px;
+            width: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 16px;
+        }
+        .nav-link{
+            font-size: 18px;
+        }
+        .card-img-top1 {
+            height: 100px;
+            width: 100px;
+            margin-left: 125px;
+            padding: 5px;
+        }
+
+        .btn-signin {
+            color: #fff;
+            background-color: #3abfe7;
+            /* Blue background */
+            border-radius: 30px;
+            /* Rounded corners */
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.2s ease-in-out;
+            margin-left: 25px;
+        }
+
+        .btn-signin:hover {
+            background-color: #8ab4e1;
+            /* Darker blue on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge on hover */
+        }
+
+        .btn-signin:focus,
+        .btn-signin:active {
+            background-color: #00408d;
+            /* Even darker blue when clicked */
+            outline: none;
+            /* Remove outline when button is clicked */
+        }
+        
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #037782;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html"><img src="/assets/Work-Horse.png" alt="" style="height: 100px;width: 300px; color: white;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="Overview.html">Our Thinking</a>
+                    </li>
+                    <!-- <li class="nav-item me-3">
+                        <a class="nav-link text-white" href="#">Contact Us</a>
+                    </li> -->
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore Our Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Talk To Our Expert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-signin" href="#">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="section">
+        <!-- Text Content -->
+        <div class="content">
+            <h1>Empowering Businesses with Expert Staffing & Consultation Solutions</h1>
+            <p>Your partner in talent acquisition and business growth</p>
+            <a href="#" class="btn btn-signin" style="margin-left: 100px;">Get Started</a>
+        </div>
+
+        <!-- Mock Browser Window with Image Placeholder -->
+        <div class="mock-browser">
+            <!-- <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="image-placeholder">
+                Image Placeholder
+            </div> -->
+            <div class="image-placeholder">
+              <img src="/assets/DALL·E-2024-03-16-05.58.33-A-captivating-blog-image-depicting-the-convergence-of-Artificial-Intelligence-AI-the-Internet-of-Things-IoT-and-email-technologies.webp" alt="Image" style="height: 400px;width: 1000px; margin-left: 200px; border-radius: 15px;" >
+          </div>
+          
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- Mock Browser Window with Image Placeholder -->
+        <div class="mock-browser">
+            <!-- <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="image-placeholder">
+                Image Placeholder
+            </div> -->
+            <div class="image-placeholder">
+              <img src="/assets/DALL·E-2024-03-16-05.58.33-A-captivating-blog-image-depicting-the-convergence-of-Artificial-Intelligence-AI-the-Internet-of-Things-IoT-and-email-technologies.webp" alt="Image" style="height: 400px;width: 1000px; margin-left: 200px; border-radius: 15px;" >
+            </div>
+        </div>
+        <!-- Text Content -->
+        <div class="content">
+            <h1>Empowering Businesses with Expert Staffing & Consultation Solutions</h1>
+            <p>Your partner in talent acquisition and business growth</p>
+            <a href="#" class="btn btn-signin" style="margin-left: 100px;">Get Started</a>
+        </div>
+    </div>
+    <div class="section" style="background-color: black;">
+        <!-- Mock Browser Window with Image Placeholder -->
+        <div class="mock-browser">
+            <!-- <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="image-placeholder">
+                Image Placeholder
+            </div> -->
+            <div class="image-placeholder">
+              <img src="https://media.deloitte.com/is/image/deloitte/firm-gold-wide?fmt=webp&fit=stretch,1&wid=768&dpr=off" alt="Image" style="height: 400px;width: 1000px; margin-left: 200px; border-radius: 15px;" >
+            </div>
+        </div>
+        <!-- Text Content -->
+        <div class="content" style="color: white;">
+            <h1>Empowering Businesses with Expert Staffing & Consultation Solutions</h1>
+            <p>Your partner in talent acquisition and business growth</p>
+            <a href="#" class="btn btn-signin" style="margin-left: 100px;">Get Started</a>
+        </div>
+    </div>
+    <br>
+    
+
+
+    <!-- Footer Section -->
+    <footer style="background-color: #037782; color: white; padding-top: 2rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a href="aboutus.html" style="text-decoration: none; color: white;">
+                        <h5>About Us</h5></span>
+                    </a>
+
+                    <p>The Internet of Things (IoT) is a network of physical objects that are connected to the internet
+                        and can communicate with other devices and systems.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <!-- <li><a href="#" class="text-white text-decoration-none">Case Studies</a></li> -->
+                        <li><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="contactus.html" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/" class="text-white me-3">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
+                    </a>
+                    <a href="https://x.com/i/flow/login" class="text-white me-3">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter" />
+                    </a>
+                    <a href="https://in.linkedin.com/" class="text-white">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn" />
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 <b>Internet Of Things</b> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</body>
+
+</html>
